@@ -1,1 +1,16 @@
 
+@import url('https://db.onlinewebfonts.com/c/8c401a9a2c0f3c491b08efb1ee08e796?family=Hansom+FY');
+
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+
+  font-family: 'Hansom FY', sans-serif;
+  font-weight: 400;
+}
