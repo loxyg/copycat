@@ -123,8 +123,16 @@ margin: 0 auto;
 
 /* HEADER */
 
+
+.bg-light{
+   background-color: #fff !important;
+   box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75) !important;
+   z-index: 2;
+}
+
+
 .logo {
-   width: 7%;
+   width: 6%;
 }
 
 /* modification du code bootstrap */
@@ -159,12 +167,22 @@ margin: 0 auto;
 
 /* Partie 1 */
 .part1{
-   padding-top: 5%;
-   background-color: #eeeeee;
-   height: 400px;
+   padding-top: 2%;
+   background-image: url("../img/test6.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position:relative;
+   height:80%;
 }
 
-.logi {
+
+
+.part1 .container80{
+   height: 100%;
+}
+
+
+.imglogiciel{
    width: 60%;
 }
 
@@ -184,18 +202,83 @@ font-weight: bolder;
    color: #fff !important;
 }
 
-/* transition p1-o2 */
+/* transition p1-p2 */
 
-.transi1 {
 
+.waves {
+   position: relative;
+   width: 100%;
+   height:2vh;
+   margin-bottom:-7px; /*Fix for safari gap*/
+   min-height:100px;
+   max-height:150px;
+   margin-top:-115px;
+}
+
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% {
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
 }
 
 /* Partie 2 */
 
 .part2{
-   padding-top: 5%;
+   padding-top: 2%;
    background-color: #ffffff;
    height: 400px;
+
+
+}
+
+.cadre{
+   margin: 10px;
+   background: linear-gradient(90deg, rgba(255,255,255,0.8708216562992385) 11%, rgba(227,255,233,0.33860877114517685) 22%, rgba(177,243,222,0.24617179635526087) 31%, rgba(181,254,246,0.2881886030779499) 37%, rgba(165,248,243,0.3498132529378939) 43%, rgba(153,235,237,0.45905695041688555) 49%, rgba(147,229,234,0.5038748775877538) 57%, rgba(141,221,231,0.6131185750667454) 68%, rgba(123,201,222,0.6747432249266894) 82%, rgba(101,176,211,0.8063958859911152) 100%);
+   height: 340px;
+   border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.cadre .container80{
+   padding : 20px;
+   height: 100%;
 }
 
 .collab {
@@ -214,8 +297,8 @@ font-weight: bolder;
 /* Partie 3 */
 
 .part3{
-   padding-top: 5%;
-   background-color: #eeeeee;
+   padding-top: 2%;
+   background-color: #ffffff;
    height: 400px;
 }
 
@@ -230,7 +313,7 @@ font-weight: bolder;
 
 
 .part4{
-   padding-top: 5%;
+   padding-top: 2%;
    background-color: #ffffff;
    height: 400px;
 }
@@ -248,15 +331,54 @@ font-weight: bolder;
 }
 
 /* Partie 5 */
-
+/* Lien bootstrap cards : https://getbootstrap.com/docs/5.0/components/card/ */
 .part5{
+padding-top: 2%;
 background-color: #eeeeee;
 }
 
 .card {
 width: 60%;
 margin-left: 10vw;
+border-radius: 1rem 1rem 1rem 1rem;
 }
+
+
+.card-img-top {
+    border-top-left-radius: calc(1rem - 1px);
+    border-top-right-radius: calc(1rem - 1px);
+}
+
+/* bouton découvrir */
+#btncard{
+border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+background: #fff;
+color: #2E2D49 !important;
+border: 2px solid #2E2D49;
+font-weight: lighter;
+}
+
+#btncard:hover{
+   background: #2E2D49;
+   color: #fff !important;
+}
+
+.part5 .btn{
+line-height: 0.5;
+}
+
+.part5 .btn-lg{
+font-size: 1.1rem;
+}
+
+/* icone fleche droite */
+.part5 i{
+   padding-left: 5px;
+}
+.part5 .fas{
+line-height: 0;
+}
+
 
 /* FOOTER */
 
