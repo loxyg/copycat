@@ -70,7 +70,6 @@ justify-content: space-between;
 align-items:center;
 }
 
-
 .container100{
 width: 100%;
 margin: 0 auto;
@@ -123,20 +122,46 @@ margin: 0 auto;
 /* Design des blocs */
 
 /* HEADER */
+
 .logo {
    width: 7%;
 }
 
-.nav-item a {
-   margin-left:  20px;
-   margin-right: 20px;
-}
+/* modification du code bootstrap */
+
+@media screen and (min-width: 992px) {
+   .nav-item  {
+      margin-left:  12vw;
+   }
+} /* --> mettre de l'espace entre les elements du header sans que cela ne s'affiche lorsque le header deviens un menu burger */
+
+
+.navbar-light .navbar-toggler{
+   color: rgba(0,0,0,0);
+   border-color: rgba(0,0,0,0) ;
+} /* --> Rend invisible les contours du boutton fermer du menu burger */
+
+.navbar-nav .nav-link {
+   padding-left: 45%;
+} /* --> Décale les titre du menu burger */
+
+.dropdown-menu {
+   max-width: 20%;
+   margin-left: 40%;
+} /* --> Décale les cadres des dropdown du menu burger */
+
+@media screen and (min-width: 992px) {
+   .dropdown-menu  {
+      margin-left: 0%;
+   }
+} /* --> Ne décale pas les cadres des dropdown dans le header */
+
 
 /* Partie 1 */
 .part1{
    padding-top: 5%;
    background-color: #eeeeee;
-   height: 490px;
+   height: 400px;
 }
 
 .logi {
@@ -159,13 +184,18 @@ font-weight: bolder;
    color: #fff !important;
 }
 
+/* transition p1-o2 */
+
+.transi1 {
+
+}
 
 /* Partie 2 */
 
 .part2{
    padding-top: 5%;
-   background-color: #cccccc;
-   height: 490px;
+   background-color: #ffffff;
+   height: 400px;
 }
 
 .collab {
@@ -186,7 +216,7 @@ font-weight: bolder;
 .part3{
    padding-top: 5%;
    background-color: #eeeeee;
-   height: 490px;
+   height: 400px;
 }
 
 .presta {
@@ -201,8 +231,8 @@ font-weight: bolder;
 
 .part4{
    padding-top: 5%;
-   background-color: #cccccc;
-   height: 490px;
+   background-color: #ffffff;
+   height: 400px;
 }
 
 .projet {
@@ -219,13 +249,21 @@ font-weight: bolder;
 
 /* Partie 5 */
 
+.part5{
+background-color: #eeeeee;
+}
+
+.card {
+width: 60%;
+margin-left: 10vw;
+}
+
 /* FOOTER */
 
-/* footer */
 
 
 .pre-footer {
-background-color: #21201E;
+background-color: #ffffff;
 }
 
 .pre-footer .container80{
@@ -245,12 +283,12 @@ padding-bottom: 25px;
 font-size: 40px;
 width: 50px;
 height: 50px;
-color: white;
+color: #dedede;
 }
 
 .icones i:hover{
 font-size: 40px;
-color: rgba( 217, 217, 217 , 0.7);
+color: rgba( 74, 227, 255 , 0.7);
 }
 
 .pre-footer .container80 .lane{
@@ -260,10 +298,10 @@ width: 30%;
 .lane h3{
 font-size: 18px;
 padding-bottom: 10px;
-border-bottom: 1px solid #ffffff;
+border-bottom: 1px solid #000000;
 margin-bottom: 23px;
 padding-top: 10px;
-color: #ffffff;
+color: #000000;
 }
 
 .lane h2{
@@ -271,28 +309,28 @@ font-size: 18px;
 padding-bottom: 10px;
 margin-bottom: 23px;
 padding-top: 10px;
-color: #ffffff;
+color: #808080;
 }
 
 .lane h2 :hover {
     text-decoration: underline;
-    color: #d9d9d9;
+    color: #000000;
 }
 
 .lane ul li a{
 font-size : 13px;
 display: block;
-color: white;
+color: #808080;
 padding-bottom: 20px;
 }
 
 .lane ul li{
-color: #d9d9d9
+color: #808080;
 }
 
 .lane ul li a:hover{
 text-decoration: underline;
-color: #d9d9d9;
+color: #000000;
 }
 
 .pre-footer .main-footer{
@@ -301,14 +339,14 @@ margin-bottom: -27px;
 }
 
 .main-footer p{
-color: #ffffff;
+color: #000000;
 }
 
 
 .main-footer a{
-color: #ffffff;
+color: #000000;
 }
 
 .main-footer p a:hover{
-color: #d9d9d9;
+color: #808080;
 }
