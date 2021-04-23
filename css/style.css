@@ -61,6 +61,10 @@ body {
    text-transform: uppercase;
 }
 
+.title {
+   font-size: 20px;
+}
+
 /* flexer et containers */
 
 .flexer{
@@ -118,6 +122,10 @@ width: 20%;
 margin: 0 auto;
 }
 
+.height80{
+   height: 80%;
+}
+
 
 /* Design des blocs */
 
@@ -165,6 +173,24 @@ margin: 0 auto;
 } /* --> Ne décale pas les cadres des dropdown dans le header */
 
 
+
+/* fleche vers le haut */
+
+
+.goToTop{
+position: fixed;
+right: 15px;
+bottom: 15px;
+z-index: 500;
+}
+
+
+.goToTop i{
+    font-size: 40px;
+    color: #0C99DF;
+}
+
+
 /* Partie 1 */
 .part1{
    padding-top: 2%;
@@ -204,6 +230,8 @@ font-weight: bolder;
 
 /* transition p1-p2 */
 
+.transitionp1p2{
+}
 
 .waves {
    position: relative;
@@ -265,8 +293,6 @@ font-weight: bolder;
    padding-top: 2%;
    background-color: #ffffff;
    height: 400px;
-
-
 }
 
 .cadre{
@@ -381,8 +407,6 @@ line-height: 0;
 
 
 /* FOOTER */
-
-
 
 .pre-footer {
 background-color: #ffffff;

@@ -20,3 +20,5 @@ Charte graphique :
 #008000 --> Vert foncé
 
 il faut checker si le header fonctionne sur d'autres resolution que la mienne car j'ai bidouiller
+
+Pour la liste des entreprises partenaires, je pense qu'il sera plus simple de creer une banniere avec tous les logos et d'integrer la banniere plutot que d'intégrer 1 par 1 les logos
