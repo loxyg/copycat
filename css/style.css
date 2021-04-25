@@ -147,7 +147,7 @@ margin: 0 auto;
 
 @media screen and (min-width: 992px) {
    .nav-item  {
-      margin-left:  12vw;
+      margin-left:  11vw;
    }
 } /* --> mettre de l'espace entre les elements du header sans que cela ne s'affiche lorsque le header deviens un menu burger */
 
@@ -421,24 +421,34 @@ padding-top: 30px;
 padding-bottom: 25px;
 }
 
-.lane {
-   width: 30%;
-}
+
 
 .icones i{
 font-size: 40px;
 width: 50px;
 height: 50px;
-color: #dedede;
+color: #000000;
 }
 
 .icones i:hover{
 font-size: 40px;
-color: rgba( 74, 227, 255 , 0.7);
+color: #0080ff;
+}
+
+.icones a{
+   text-decoration: none;
 }
 
 .pre-footer .container80 .lane{
-width: 30%;
+width: 20%;
+}
+
+.lane {
+   width: 20%;
+}
+
+.lane ul {
+   padding-left: 0px;
 }
 
 .lane h3{
@@ -455,28 +465,30 @@ font-size: 18px;
 padding-bottom: 10px;
 margin-bottom: 23px;
 padding-top: 10px;
-color: #808080;
+color: #000000;
 }
 
-.lane h2 :hover {
+.lane h2:hover {
     text-decoration: underline;
     color: #000000;
 }
 
 .lane ul li a{
-font-size : 13px;
+font-size : 17px;
 display: block;
-color: #808080;
+color: #000000;
 padding-bottom: 20px;
+text-decoration: none;
 }
 
 .lane ul li{
 color: #808080;
+list-style: none;
 }
 
 .lane ul li a:hover{
-text-decoration: underline;
-color: #000000;
+text-decoration: none;
+color: #4d4d4d;
 }
 
 .pre-footer .main-footer{
@@ -486,6 +498,7 @@ margin-bottom: -27px;
 
 .main-footer p{
 color: #000000;
+margin-bottom: 0px;
 }
 
 
