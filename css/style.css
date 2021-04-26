@@ -390,10 +390,14 @@ z-index: 500;
    height:80%;
 }
 
-
-
 .part1 .container80{
    height: 100%;
+}
+
+@media (max-width: 768px) {
+   .part1{
+      height: 55%;
+   }
 }
 
 
@@ -433,6 +437,7 @@ font-weight: bolder;
 }
 
 
+
 /* Animation */
 
 .parallax > use {
@@ -465,8 +470,9 @@ font-weight: bolder;
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
-    height:40px;
-    min-height:40px;
+    height: 100px;
+   min-height: 40px;
+   margin-bottom: 13px;
   }
   .content {
     height:30vh;
@@ -474,6 +480,7 @@ font-weight: bolder;
   h1 {
     font-size:24px;
   }
+
 }
 
 /* Partie 2 */
