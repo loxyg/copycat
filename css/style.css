@@ -25,6 +25,10 @@ body {
 
 /* couleurs */
 
+.bggrey{
+   background-color: #e5e7eb;
+}
+
 .rouge{
    color : #AF182B;
 }
@@ -77,7 +81,7 @@ color : #029F65;
 }
 
 .border{
-   border-radius: 20px;
+   border-radius: 10px;
    box-sizing: border-box;
    border-bottom: 1px solid #969696;
 }
