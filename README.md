@@ -29,3 +29,6 @@ Ajouter "OpenGraph" dans le head pour le referencement ??
 
 Implémenter le telecharement de la maquette ??
 --> https://codepen.io/aaroniker/pen/ZEYmPqM
+
+
+font-family: 'Caveat'; --> Police d'écriture manuscrite
