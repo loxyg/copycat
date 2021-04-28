@@ -73,7 +73,7 @@
    <!-- modal de connexion -->
    <!-- Modal pour se creer un compte -->
    <div class="modal fade" id="modal-createaccount" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-     <div class="modal-dialog modal-sm ">
+     <div class="modal-dialog modal-sm connexion">
           <div class="modal-content">
                <div class="modal-body flexer"> <!-- Debut du contenu -->
 
@@ -104,7 +104,7 @@
 
    <!-- Modal pour s'identifier' -->
    <div class="modal fade" id="modal-identifier" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-     <div class="modal-dialog modal-sm ">
+     <div class="modal-dialog modal-sm connexion">
           <div class="modal-content">
                <div class="modal-body flexer"> <!-- Debut du contenu -->
 
@@ -211,7 +211,7 @@
                       <h2 class="gras vert">Automne</h2>
                       <p class="justify-t vPad"> Automne est notre offre standart. <br><br>Nous vous proposons simplement de profiter de notre algorithme pour obtenir votre bilan carbone. <br><br> Ce bilan carbone est valable pour la déclaration de vos émissions (obligatoire pour les entreprises de plus de 50 salariés). <br>Profitez également de nos suggestions dans le but de baisser ce bilan. </p>
                       <br>
-                      <a href="#" class="btn btn-1">
+<!-- btn d'activ -->  <a href="#" class="btn btn-1" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                         <svg>
                           <rect x="0" y="0" fill="none" width="100%" height="100%"/>
                         </svg>
@@ -221,13 +221,53 @@
                      </div>
                   </div>
 
+
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                   <div class="container30 text-center pad2">
                      <div class="border pad2 bggrey shadowaround bghover cadre">
                      <div class="offretype2">
                       <h3 class="offre"><i class="fab fa-pagelines"></i> PRO</h3>
                    </div>
                       <h2 class="gras vert">Printemps</h2>
-                      <p class="justify-t vPad">Printemps est notre offre PRO. <br><br>Nous vous proposons en plus des propositions d’automne, d’être accompagné dans la mise en place de nos suggestions et de profiter de nos projets de compensation carbone. <br><br> Nous vous proposons également de profiter de notre kit de communication, pour faire savoir à tous vos clients que vous êtes écologiquement responsable et ainsi renforcer votre image de marque.</p>
+                      <p class="justify-t vPad">Printemps est notre offre PRO. <br><br>Nous vous proposons en plus des propositions d’automne, de vous accompagner dans la mise en place de nos suggestions et de profiter de nos projets de compensation carbone. <br><br> Nous vous proposons également de profiter de notre kit de communication, pour faire savoir à tous vos clients que vous êtes écologiquement responsable et ainsi renforcer votre image de marque.</p>
                       <a href="#" class="btn btn-1">
                         <svg>
                           <rect x="0" y="0" fill="none" width="100%" height="100%"/>

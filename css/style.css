@@ -309,7 +309,12 @@ font-weight: bolder;
    }
 } /* --> Ne décale pas les cadres des dropdown dans le header */
 
+/* Design des modals */
 
+.connexion .modal-content{
+   background: none;
+   border: none;
+}
 /* Design des modals de connexion */
 
 @media screen and (max-width: 575px) {
@@ -700,6 +705,9 @@ color : #fff;
 .offre i {
    color : #95e225;
 }
+
+/* Modales de la partie 3 */
+
 
 
 
