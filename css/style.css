@@ -731,8 +731,14 @@ color : #fff;
 .part5{
 padding-top: 2%;
 background-color: #eeeeee;
+padding-bottom: 2%;
 }
 
+.flexArticle {
+   display: flex;
+   margin-left: 0;
+   justify-content: space-around;
+}
 /* Correction bug row */
 .row {
    margin-top: 0px;
@@ -742,10 +748,22 @@ margin-left: 0px;
 
 .card {
 width: 60%;
-margin-left: 10vw;
+margin-left: 0;
+width: 28%;
 border-radius: 1rem 1rem 1rem 1rem;
 }
 
+.card-title {
+   font-weight: bold;
+   color: blue;
+}
+
+.card-subtitle {
+   position: relative;
+   bottom: 5%;
+   font-size: 0.8em;
+   color: grey;
+}
 
 .card-img-top {
     border-top-left-radius: calc(1rem - 1px);
@@ -782,6 +800,10 @@ font-size: 1.1rem;
 line-height: 0;
 }
 
+.btn-article {
+   position: absolute;
+   bottom: 1%;
+}
 
 /* FOOTER */
 
