@@ -18,7 +18,7 @@ body {
   margin: 0px;
 }
 
-body {
+*, body {
   font-family: 'Hansom FY', sans-serif;
   font-weight: 400;
 }
@@ -26,7 +26,7 @@ body {
 /* couleurs */
 
 .bggrey{
-   background-color: #e5e7eb;
+   background-color: #f6f6f6;
 }
 
 .rouge{
@@ -79,10 +79,22 @@ color : #029F65;
    text-align: center;
 }
 
+.justify-t{
+   text-align: justify;
+}
+
 .border{
    border-radius: 10px;
    box-sizing: border-box;
    border-bottom: 1px solid #969696;
+}
+
+.shadowaround{
+   box-shadow: 0px 0px 22px 3px rgba(0, 0, 0, 0.16);
+}
+
+.aligntop{
+   vertical-align: top;
 }
 
 /* flexer et containers */
@@ -151,8 +163,13 @@ margin: 0 auto;
 }
 
 .verticalPad{
-   padding-top: 6rem;
-   padding-bottom: 6rem;
+   padding-top: 4rem;
+   padding-bottom: 4rem;
+}
+
+.vPad{
+   padding-top: 1rem;
+   padding-bottom: 0.5rem;
 }
 
 .horizontalPad{
@@ -160,12 +177,90 @@ margin: 0 auto;
    padding-bottom: 1.25rem;
 }
 
+
 .pad {
    padding: 2rem;
 }
 
 .pad2{
    padding: 1rem;
+}
+
+/* Design des boutons */
+
+
+#btnintro{
+border-radius: 0 2.5rem 2.5rem 2.5rem;
+background: #fff;
+color: #2E2D49 !important;
+border: 4px solid #2E2D49;
+font-weight: bolder;
+}
+
+
+
+#btnintro:hover{
+   background: #2E2D49;
+   color: #fff !important;
+}
+
+/* ---------------*/
+
+
+.cadre .btn {
+  color: #0C99DF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 0px;
+  border: 1px solid #0C99DF6B;
+  border-radius: 0px;
+}
+@media (min-width: 600px) {
+  .cadre .btn {
+    margin: 0 1em 2em;
+  }
+}
+.cadre .btn:hover {
+  text-decoration: none;
+}
+
+
+.cadre .btn-1 {
+  font-weight: 100;
+}
+.cadre .btn-1 svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.cadre .btn-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
+.cadre .btn-1:hover {
+  background: #0C99DF;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.cadre .btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 
@@ -429,7 +524,7 @@ z-index: 500;
    background-repeat: no-repeat;
    background-size: cover;
    position:relative;
-   height:80%;
+   height:95%;
 }
 
 .part1 .container80{
@@ -444,24 +539,11 @@ z-index: 500;
 
 
 .imglogiciel{
-   width: 60%;
+   width: 50%;
+   margin-left: 35%;
+   margin-top: -20%;
 }
 
-
-#btnintro{
-border-radius: 0 2.5rem 2.5rem 2.5rem;
-background: #fff;
-color: #2E2D49 !important;
-border: 4px solid #2E2D49;
-font-weight: bolder;
-}
-
-
-
-#btnintro:hover{
-   background: #2E2D49;
-   color: #fff !important;
-}
 
 /* transition p1-p2 */
 
@@ -556,9 +638,8 @@ font-weight: bolder;
 /* Partie 3 */
 
 .part3{
-   padding-top: 2%;
    background-color: #ffffff;
-   height: 100%;
+   padding-bottom: 2%;
    border-bottom: 1px solid #e5e7eb;
 }
 
@@ -566,6 +647,62 @@ font-weight: bolder;
 .presta{
    width: 95%;
 }
+
+.bggrey h3 {
+font-size: 12px;
+}
+
+.bggrey p{
+   font-size: 16px;
+}
+
+.offretype{
+   margin-left: 75%;
+   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+   border: 1px solid #2E2D49;
+   width: 76px;
+   height: 16px;
+   padding-right: 3px;
+   background-color: #0C99DF;
+   margin-top: -3%;
+}
+
+.offretype2{
+   margin-left: 83%;
+   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+   border: 1px solid #2E2D49;
+   width: 52px;
+   height: 16px;
+   padding-right: 3px;
+   background-color: #0C99DF;
+   margin-top: -3%;
+}
+
+.offretype3{
+   margin-left: 75%;
+   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+   border: 1px solid #2E2D49;
+   width: 76px;
+   height: 16px;
+   padding-right: 3px;
+   background-color: #0C99DF;
+   margin-top: -3%;
+}
+
+.bghover:hover{
+   background-color: #07BA1266;
+}
+
+.offre{
+color : #fff;
+}
+
+.offre i {
+   color : #95e225;
+}
+
+
+
 
 /* Partie 4 */
 
