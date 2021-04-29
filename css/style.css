@@ -23,6 +23,8 @@ body {
   font-weight: 400;
 }
 
+
+
 /* couleurs */
 
 .bggrey{
@@ -83,10 +85,8 @@ color : #029F65;
    text-align: justify;
 }
 
-.border{
-   border-radius: 10px;
-   box-sizing: border-box;
-   border-bottom: 1px solid #969696;
+.justify-t:hover{
+    text-align: justify;
 }
 
 .shadowaround{
@@ -95,6 +95,19 @@ color : #029F65;
 
 .aligntop{
    vertical-align: top;
+}
+
+.border-t {
+border-top: 1px solid rgba(209,213,219,var(--tw-border-opacity));
+}
+
+.border-around {
+border: 1px solid rgba(209,213,219,var(--tw-border-opacity));
+}
+
+.border-around2 {
+border: 1px solid rgba( 0, 94, 234,var(--tw-border-opacity));
+border-radius: .5rem;
 }
 
 /* flexer et containers */
@@ -106,9 +119,19 @@ justify-content: space-between;
 align-items:center;
 }
 
+.flexer2{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+}
+
 .container100{
 width: 100%;
 margin: 0 auto;
+}
+
+.w100{
+width: 100%;
 }
 
 .container90{
@@ -116,20 +139,39 @@ width: 90%;
 margin: 0 auto;
 }
 
+.w90{
+   width: 90%;
+}
+
 .container80{
 width: 80%;
 margin: 0 auto;
 }
 
+.w80{
+   width: 80%;
+}
 
 .container70{
 width: 70%;
 margin: 0 auto;
 }
 
+.w75{
+   width:75%;
+}
+
+.w70{
+   width: 70%;
+}
+
 .container60{
 width: 60%;
 margin: 0 auto;
+}
+
+.w60{
+   width: 60%;
 }
 
 
@@ -138,9 +180,21 @@ width: 50%;
 margin: 0 auto;
 }
 
+.w50{
+   width: 50%;
+}
+
 .container40{
 width: 40%;
 margin: 0 auto;
+}
+
+.w40{
+   width: 40%;
+}
+
+.w33{
+   width: 33.333%;
 }
 
 
@@ -154,12 +208,27 @@ width: 20%;
 margin: 0 auto;
 }
 
+.w25{
+   width: 25%;
+}
+
+.w20{
+   width: 20%;
+}
+
 .height100{
    height: 100%;
 }
 
 .height80{
    height: 80%;
+}
+
+/* Marges et paddings */
+
+.mx-auto{
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .verticalPad{
@@ -172,9 +241,29 @@ margin: 0 auto;
    padding-bottom: 0.5rem;
 }
 
+.vPad2{
+   padding-top: 0.4rem;
+   padding-bottom: 0.4rem;
+}
+
+.vPad3{
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+}
+
+.vPad4{
+   padding-left: 1.25rem;
+   padding-bottom: 1.25rem;
+}
+
 .horizontalPad{
    padding-left: 1.25rem;
    padding-bottom: 1.25rem;
+}
+
+.hPad{
+   padding-left: 0.5rem;
+   padding-bottom: 0.5rem;
 }
 
 
@@ -185,6 +274,8 @@ margin: 0 auto;
 .pad2{
    padding: 1rem;
 }
+
+
 
 /* Design des boutons */
 
@@ -257,6 +348,60 @@ font-weight: bolder;
   letter-spacing: 1px;
 }
 .cadre .btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* ------------ */
+
+.btndiv .btn {
+   color: #0C99DF;
+text-transform: uppercase;
+cursor: pointer;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+max-width: 160px;
+position: relative;
+text-decoration: none;
+text-transform: uppercase;
+width: 100%;
+font-family: sans-serif;
+border: 1.5px solid #0C99DFF2;
+border-radius: 0.2rem;
+}
+
+
+.btndiv .btn:hover {
+  text-decoration: none;
+}
+
+.btndiv .btn-1 {
+  font-weight: 100;
+}
+.btndiv .btn-1 svg {
+  height: 34px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.btndiv .btn-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
+.btndiv .btn-1:hover {
+  background: #0C99DF;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.btndiv .btn-1:hover rect {
   stroke-width: 5;
   stroke-dasharray: 15, 310;
   stroke-dashoffset: 48;
@@ -648,6 +793,9 @@ z-index: 500;
    border-bottom: 1px solid #e5e7eb;
 }
 
+.blockheight{
+   height:10%;
+}
 
 .presta{
    width: 95%;
@@ -698,6 +846,17 @@ font-size: 12px;
    background-color: #07BA1266;
 }
 
+.border{
+   border-radius: 10px;
+   box-sizing: border-box;
+   border-bottom: 1px solid #969696;
+}
+
+
+.border:hover{
+   border: 3px solid #2097ff !important;
+}
+
 .offre{
 color : #fff;
 }
@@ -708,8 +867,133 @@ color : #fff;
 
 /* Modales de la partie 3 */
 
+.tarrifs .modal-content {
+    background: none;
+    border: none;
+}
+
+.colone1title{
+   display: block;
+   margin-top: 8rem;
+}
+
+.colone1{
+   margin-bottom: 0;
+   margin-top: 1px;
+   border-radius: 0;
+   border-width: 2px;
+   --tw-border-opacity: 1;
+border-color: rgba(209,213,219,var(--tw-border-opacity));
+overflow: hidden;
+border-left-width: 1px;
+border-right-width: 0px;
+border-bottom-width: 1px;
+border-top-width: 1px;
+}
+
+.colone234{
+   flex-wrap: wrap;
+   display : flex;
+   border-radius: .5rem;
+   border-width: 1px;
+   --tw-border-opacity: 1;
+   border-color: rgba(209,213,219,var(--tw-border-opacity));
+   border-style: solid;
+   box-sizing: border-box;
+}
+
+.colones2{
+   margin-bottom: 0;
+   margin-top: 1px;
+   border-style: none;
+   border-radius: 0;
+   border-width: 2px;
+}
+
+.colone2title{
+   height: 8rem;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   display: flex;
+   background-color: #fff;
+}
+
+.casegrise{
+   text-align: center;
+   height: 3rem;
+   margin-top: -1px;
+   justify-content: center;
+   display: flex;
+   --tw-bg-opacity: 1;
+   background-color: rgba(243,244,246,var(--tw-bg-opacity));
+}
+
+.caseblanche{
+   background-color: #fff;
+   text-align: center;
+   height: 3rem;
+   margin-top: -1px;
+   justify-content: center;
+   display: flex;
+}
+
+.modalh3{
+letter-spacing: .1em;
+font-size: 15px;
+}
+
+.modalh2{
+font-size: 35px;
+}
+
+.modalp{
+   font-size: 11px;
+   font-style: italic;
+}
+
+.mois{
+font-size: 12px;
+}
+
+.populaire{
+   font-family: cursive;
+   letter-spacing: .1em;
+   right: 222px;
+   top: 16px;
+   position: absolute;
+   color: #fff;
+   background-color: rgba(0, 94, 234);
+   border-radius: .3rem;
+   border-width: 1px;
+   padding-left: .4rem;
+   padding-right: .4rem;
+   padding-top: .1em;
+   padding-bottom: .1rem;
+   font-size: .5rem;
+   line-height: 1rem;
+}
+
+.btndiv{
+   background-color: #fff;
+   padding: 0.5rem;
+   text-align: center;
+   border-top-width: 1px;
+   border-bottom-left-radius: .5rem;
+   --tw-border-opacity: 1;
+   border-color: rgba(209,213,219,var(--tw-border-opacity));
+}
 
 
+.colone2 .btndiv {
+   border-bottom-left-radius: 0rem !important;
+}
+.colone3 .btndiv {
+   border-bottom-left-radius: 0rem !important;
+}
+.colone4 .btndiv {
+   border-bottom-left-radius: 0rem !important;
+}
 
 
 /* Partie 4 */
