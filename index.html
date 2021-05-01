@@ -23,20 +23,20 @@
 
 <!-- HEADER -->
 
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <nav class="navbar navbar-expand-lg navbar-light">
      <div class="container-fluid">
       <img class="logo" src="img/logoPNG.png" alt="">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
       </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                     <li><a class="dropdown-item" href="#">exemple</a></li>
-                     <li><a class="dropdown-item" href="#">Another exemple</a></li>
-                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     <li><a class="dropdown-item" href="#">Offre basique</a></li>
+                     <li><a class="dropdown-item" href="#">Offre été</a></li>
+                     <li><a class="dropdown-item" href="#">Offre business</a></li>
                    </ul>
                 </li>
 
@@ -137,25 +137,33 @@
 </a>
 
 
+
 <!-- Partie 1 -->
 
       <section class="part1">
+         <!-- partial:index.partial.html -->
+         <div class="wrap-2"><canvas id="liquid"></canvas></div>
          <div class="container80 flexer">
 
-            <div class="container50 height80">
-               <h1><span class="bleu gras uppercase">Engagez vous sur la voie de la neutralité carbone avec Ostara</span></h1>
-               <p> <span class="gras ">Un outil simple et ludique à utiliser pour aider votre entreprise à réduire et compenser son impact carbone.<br> Notre solution sur mesure est adaptée pour toutes les entreprises, quelles que soient leur taille et leurs besoins. Obtenez un avant-goût gratuitement dès maintenant.</span></p>
-               <p></p>
-               <a href="#part3">
-                  <button id="btnintro" type="button" class="btn btn-primary btn-lg" >Découvrir</button>
-               </a>
-            </div>
+              <div class="container50 height80">
+                <h1><span class="bleu gras uppercase">Engagez vous sur la voie de la neutralité carbone avec Ostara</span></h1>
+                <p> <span class="gras ">Un outil simple et ludique à utiliser pour aider votre entreprise à réduire et compenser son impact carbone.<br> Notre solution sur mesure est adaptée pour toutes les entreprises, quelles que soient leur taille et leurs besoins. Obtenez un avant-goût gratuitement dès maintenant.</span></p>
+                <p></p>
+                <a href="#part3">
+                    <button id="btnintro" type="button" class="btn btn-primary btn-lg" >Découvrir</button>
+                </a>
+              </div>
 
-            <div class="container50">
-               <img class="imglogiciel" src="img/logiciel.png" alt="">
-            </div>
 
-         </div>
+           <div class="container50">
+             <img class="imglogiciel" src="img/logiciel.png" alt="">
+           </div>
+
+        </div>
+         <!-- partial -->
+           <script  src="script/script.js"></script>
+
+
       </section>
 
 <!-- transi P1 P2 -->
@@ -176,22 +184,34 @@
 
 <!-- Partie 2 -->
 
+
+
 <section class="part2">
       <div class="container80 flexer">
+         <div class="container100 text-center verticalPad">
+            <article>
+               <h1 class="gras bigtitle bleu vPad2">Qui sommes-nous ?</h1>
+               <div class="container15 bgtitle h10"></div>
+            </article>
+         </div>
 
          <div class="container30">
             <img class="collab" src="img/imgcollaborateur-test2.png" alt="">
          </div>
 
-         <div class="container60">
-            <h1>Qui sommes-nous ?</h1>
-            <br>
-            <p>Notre éponyme, Ostara, est la déesse germanique du printemps et représente notre objectif : œuvrer pour un printemps plus vert, en aidant les entreprises qui nous font confiance pour réduire leur impact environnemental. Afin d’y arriver, nous mettons notre expertise, nos connaissances et notre logiciel à votre service.
-            </p><p>Notre entreprise est relativement récente. En effet, le changement dans les lois concernant l’encadrement des entreprises en matière de responsabilité carbone nous a poussé à agir. Cependant, nous comptons bien devenir de véritables acteurs agissant non seulement en réaction mais également en amont, en anticipant les futures lois et en aidant nos clients afin qu’ils ne soient pas pris au dépourvu et soient le plus préparés possible.</p>
+         <div class="container60 text-part2 bggrey shadowaround border1 text-left">
+            <p>Notre éponyme, Ostara, est la déesse germanique du printemps.</p>
+            <p>Elle représente notre objectif : œuvrer pour un printemps plus vert, en aidant les entreprises qui nous font confiance pour réduire leur impact environnemental. </p>
+            <p>Afin d’y arriver, nous mettons notre expertise, nos connaissances et notre logiciel à votre service.
+            </p>
+            <p>Notre entreprise est relativement récente. En effet, le changement dans les lois concernant l’encadrement des entreprises en matière de responsabilité carbone nous a poussé à agir. Cependant, nous comptons bien devenir de véritables acteurs agissant non seulement en réaction mais également en amont, en anticipant les futures lois et en aidant nos clients afin qu’ils ne soient pas pris au dépourvu et soient le plus préparés possible.</p>
          </div>
 
       </div>
 </section>
+
+<!-- background image -->
+<div class="bgimage">
 
 <!-- Partie 3 -->
 
@@ -199,12 +219,17 @@
            <div class="container90 flexer">
 
                 <div class="container100 text-center verticalPad">
-                   <h1 class="gras bigtitle bleu">Nos services</h1>
+                   <div class="container100">
+                      <article>
+                      <h1 class="gras bigtitle bleu">Nos services</h1>
+                      </article>
+                      <div class="container15 bgtitle h10"></div>
+                   </div>
                 </div>
 
                <div class="container100 flexer">
                  <div class="container30 text-center pad2 blockheight">
-                    <div class="border pad2 bggrey shadowaround cadre bghover">
+                    <div class="border pad2 bgwhite shadowaround cadre bghover">
                      <div class="offretype">
                       <h3 class="offre"><i class="fas fa-seedling"></i> BASIQUE</h3>
                       </div>
@@ -318,7 +343,7 @@
 
 
                   <div class="container30 text-center pad2 ">
-                     <div class="border pad2 bggrey shadowaround bghover cadre">
+                     <div class="border pad2 bgwhite shadowaround bghover cadre">
                      <div class="offretype2">
                       <h3 class="offre"><i class="fab fa-pagelines"></i> PRO</h3>
                    </div>
@@ -337,7 +362,7 @@
                   </div>
 
                   <div class="container30 text-center pad2">
-                     <div class="border pad2 bggrey shadowaround bghover cadre">
+                     <div class="border pad2 bgwhite shadowaround bghover cadre">
                      <div class="offretype3">
                       <h3 class="offre"><i class="fas fa-tree"></i> BUSINESS</h3>
                    </div>
@@ -362,6 +387,12 @@
 
 <section class="part4">
    <div class="container80 flexer">
+      <div class="container100 text-center verticalPad">
+         <article>
+         <h1 class="gras bigtitle">Pourquoi nous ?</h1>
+         </article>
+           <div class="container15 bgtitle h10"></div>
+      </div>
 
       <div class="container40">
          <img class="projet" src="img/imgprojet-test.png" alt="">
@@ -369,7 +400,7 @@
       </div>
 
       <div class="container60">
-         <h1>Pourquoi nous ?</h1>
+
          <p>À travers nos différentes offres, nous vous proposons d’engager votre entreprise sur la voie de la neutralité carbone. Nous comptons vous accompagner à partir d’un questionnaire complet sur votre entreprise et vos activités afin d’avoir une vision la plus précise possible sur votre consommation d’énergie, vos émissions de gaz à effet de serre et plus largement vos émissions polluantes. Notre but est ensuite de vous accompagner dans la réduction de ces émissions.
          </p>
          <p>Bien entendu, il est presque impossible de complètement les faire disparaître. C’est pourquoi nous vous proposons également de compenser les émissions restantes grâce à nos partenaires tels que Pur Projet, ayant pour but de planter des arbres dans le monde entier.
@@ -385,9 +416,17 @@
 
 <!-- Partie 5 -->
 
-<section class="part5">
+<section class="part5 bottompad">
+   <div class="container100 text-center verticalPad">
+     <div class="container100">
+         <article>
+         <h1 class="gras bigtitle bleu">Documentation</h1>
+         </article>
+         <div class="container15 bgtitle h10"></div>
+     </div>
+  </div>
 <div class = "flexArticle">
-   <div class="card">
+   <div class="card shadowaround2">
       <img src="img/card1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Il est urgent d'entraîner d'autres acteurs sur cette voie</h5>
@@ -396,16 +435,16 @@
         <button id="btncard" type="button" class="btn btn-primary btn-lg btn-article" >Découvrir <i class="fas fa-angle-right"></i></button>
       </div>
    </div>
-   <div class="card">
-      <img src="img/card1.jpg" class="card-img-top" alt="...">
+   <div class="card shadowaround2">
+      <img src="img/card4.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Les entreprises de plus de 50 salariés devront réaliser un bilan GES simplifié</h5>
         <p class="card-text">L’Article 244 de la Loi de finance 2021 introduit une nouvelle disposition pour les entreprises soutenues par l’Etat dans le cadre du Plan de Relance : faire un bilan simplifié de leurs émissions de GES.</p>
         <button id="btncard" type="button" class="btn btn-primary btn-lg btn-article" >Découvrir <i class="fas fa-angle-right"></i></button>
       </div>
    </div>
-   <div class="card">
-      <img src="img/card1.jpg" class="card-img-top" alt="...">
+   <div class="card shadowaround2">
+      <img src="img/card2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">La RSE au cœur des enjeux des consommateurs français</h5>
         <p class="card-text">La prise de conscience des problèmes environnementaux, sociaux et économiques en France connaît une progression rapide, en témoignent l’ampleur des événements qui s’en font l’écho dans les médias. Elle suscite des réactions vives et place chacun, qu’il soit citoyen, consommateur, parent, chef d’entreprise, salarié.</p>
@@ -418,7 +457,7 @@
 
 <!-- Footer -->
 
-      <footer class="pre-footer">
+      <footer class="pre-footer topPad border-t2">
               <div class="container80footer">
                     <div class="lane2">
                          <div class="container100">
@@ -473,6 +512,6 @@
                    </div>
              </div>
      </footer>
-
+      </div>
    </body>
 </html>
