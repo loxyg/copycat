@@ -88,7 +88,7 @@
         },
         n = i.screen.init("liquid", null, !0),
         a = n.ctx;
-    n.resize(), t = new e(n.width, n.height, 6, "#edd1ff", "#5BC1F6"), o()
+    n.resize(), t = new e(n.width, n.height, 6, "#d5d5d5", "#5bc273"), o()
 }();
 
-// Fin script pour la Partie 1 
+// Fin script pour la Partie 1
