@@ -35,3 +35,9 @@ font-family: 'Caveat'; --> Police d'écriture manuscrite
 
 J'ai enlevé :
 ", pour les émissions restantes non réductibles." du cadre 2 part 3
+
+
+.tarrifs .modal-content {
+    background: none;
+    border: none;
+}
